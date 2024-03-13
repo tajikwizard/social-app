@@ -1,0 +1,9 @@
+.profile{
+    grid-area: main;
+   
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+.item {
+    background-color: blue;
+}

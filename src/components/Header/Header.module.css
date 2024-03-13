@@ -1,0 +1,10 @@
+.header {
+    grid-area: header;
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+.header img {
+    width: 100%;
+    max-width: 60px;
+    height: auto; 
+    object-fit: contain; 
+}

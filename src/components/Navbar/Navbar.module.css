@@ -1,0 +1,12 @@
+.nav{
+    grid-area: nav;
+  
+    box-shadow: 1px 1px 1px 1px lightgray;
+    height: 80vh;
+}
+.item{
+    color: red;
+}
+.active{
+    color: green;
+}
