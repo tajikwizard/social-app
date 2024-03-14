@@ -1,5 +1,6 @@
 .header {
     grid-area: header;
+    height: 80px;
     box-shadow: 1px 1px 1px 1px lightgray;
 }
 .header img {
