@@ -1,18 +1,21 @@
-.app-wrapper{
-    display: grid;
+.app-wrapper {
+  display: grid;
 
-    grid-template-rows: 60px 1fr;
-    grid-template-columns: 2fr 10fr;
-    grid-gap: 20px;
-    max-width: 1200px;
-    margin:  0 auto;
-    grid-template-areas: 'header header'
-    'nav main';
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-areas:
+    "header header"
+    "nav main";
 }
 
-
-.app-wrapper-content{
-    grid-area: main;
-    gap: 20px;
-    margin-top: 20px;
+.app-wrapper-content {
+  grid-area: main;
+  gap: 20px;
+  margin-top: 20px;
+}
+a {
+  text-decoration: none;
 }

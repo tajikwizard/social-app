@@ -1,8 +1,8 @@
-import React from 'react';
-import styles from './Profile.module.css';
-import Posts from './Posts/Posts';
+import React from "react";
+import styles from "./Profile.module.css";
+import Posts from "./Posts/Posts";
 
-const Profile = () => {
+const Profile = ({ postsData, addPost }) => {
   return (
     <main>
       <div className={styles.header}>
@@ -17,9 +17,9 @@ const Profile = () => {
           alt="Profile"
         />
       </div>
-      <Posts />
+      <Posts postsData={postsData} addPost={addPost} />
     </main>
   );
-}
+};
 
 export default Profile;

@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './Post.module.css';
+import React from "react";
+import styles from "./Post.module.css";
 
-export default function Post({title}) {
+export default function Post({ title, body, likesCount }) {
   return (
     <div className={styles.post}>
       <img
@@ -11,7 +11,8 @@ export default function Post({title}) {
       />
       <div className={styles.content}>
         <h2 className={styles.title}>{title}</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore esse temporibus optio laborum omnis architecto sunt unde ea accusantium. Quod sunt maiores et. Explicabo, blanditiis perferendis esse placeat quos fuga.</p>
+        <p className={styles.body}>{body}</p>
+        <span className={styles.likesCount}> ❤ {likesCount}</span>
       </div>
     </div>
   );

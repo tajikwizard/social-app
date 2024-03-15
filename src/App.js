@@ -2,10 +2,12 @@ import "./App.css";
 import Dialogs from "./components/Dialogs/Dialogs";
 import Header from "./components/Header/Header";
 import Music from "./components/Music/Music";
+import Settings from "./components/Settings/Settings";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
+import { state, addPost } from "./state";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import Settings from "./components/Settings/Settings";
+const { postsData, dialogData, messageData } = state;
 
 const App = () => {
   return (
@@ -28,11 +30,11 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Profile />,
+        element: <Profile postsData={postsData} addPost={addPost} />,
       },
       {
         path: "messages",
-        element: <Dialogs />,
+        element: <Dialogs dialogData={dialogData} messageData={messageData} />,
       },
       {
         path: "music",

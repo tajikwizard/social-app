@@ -1,0 +1,42 @@
+/* Dialogs.module.css */
+.dialogs {
+  display: flex;
+  font-size: 22px;
+  font-family: monospace;
+}
+
+.dialogsItems {
+  width: 30%;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.active {
+  color: red;
+  background-color: #007bff;
+}
+.dialog {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.dialog:hover {
+  background-color: #e4e6eb;
+}
+
+.messages {
+  flex: 1;
+  padding: 20px;
+}
+
+.message {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
